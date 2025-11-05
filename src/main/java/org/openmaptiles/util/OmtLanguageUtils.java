@@ -111,6 +111,9 @@ public class OmtLanguageUtils {
       translations.addTranslations(result, tags);
     }
 
+    String wikipedia = string(tags.get("wikipedia"));
+    putIfNotEmpty(result, "wikipedia", wikipedia);
+
     return result;
   }
 
